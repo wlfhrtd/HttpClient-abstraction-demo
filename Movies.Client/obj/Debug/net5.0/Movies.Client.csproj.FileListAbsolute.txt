@@ -30,3 +30,4 @@ D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\obj\Debug\net5.0\ref
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\obj\Debug\net5.0\Movies.Client.pdb
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\obj\Debug\net5.0\Movies.Client.genruntimeconfig.cache
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Marvin.StreamExtensions.dll

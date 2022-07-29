@@ -36,7 +36,8 @@ namespace Movies.Client
             });
 
             // services.AddScoped<IIntegrationService, CRUDService>();
-            services.AddScoped<IIntegrationService, PartialUpdateService>();
+            // services.AddScoped<IIntegrationService, PartialUpdateService>();
+            services.AddScoped<IIntegrationService, StreamService>();
         }
     }
 }

@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Marvin.StreamExtensions/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Marvin.StreamExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Marvin.StreamExtensions.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -609,6 +621,18 @@
     }
   },
   "libraries": {
+    "Marvin.StreamExtensions/1.2.0": {
+      "sha512": "nQL8cvFQh/5amnz6jaxzufWcBTuADEY4gUxVu8CUGGJyJWCoSPGjLFAPEsi6aAp1ZvLeR6hyP+OtG9JUz2GJ4Q==",
+      "type": "package",
+      "path": "marvin.streamextensions/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Marvin.StreamExtensions.dll",
+        "marvin.streamextensions.1.2.0.nupkg.sha512",
+        "marvin.streamextensions.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.JsonPatch/2.1.1": {
       "sha512": "VjTsHQQG5H8Gjw6oi3jLUc6Wnc9Gnj1alQIwVsbfxuoXS5j0rTpzIKcRNyppEf0eQfI5fV/IDPJxgxV0NK5Xgw==",
       "type": "package",
@@ -2659,6 +2683,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Marvin.StreamExtensions >= 1.2.0",
       "Microsoft.AspNetCore.JsonPatch >= 2.1.1",
       "Microsoft.Extensions.DependencyInjection >= 2.1.1",
       "Microsoft.Extensions.Logging.Console >= 2.1.1",
@@ -2707,6 +2732,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Marvin.StreamExtensions": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[2.1.1, )"

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8f2TTnhzlPPP4SMNtRvGiTxVCAaHykzLkWrE/BxjyS4OgDNPRVp5/mKwsvEOk8hdr+53w2QxcNAv3FJgKpCNgw==",
+  "dgSpecHash": "m7Ez5OnuStp/IJT6La2QurRsnJxSLqFJoUsXHIGnXio529M1uQo3knop4WSa5Q0XwiSIhCl+pxeD8vKPPrsKoA==",
   "success": true,
   "projectFilePath": "D:\\dev\\cs\\HttpClient-consume-apis-dotnet-core\\Movies.Client\\Movies.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\slrnd\\.nuget\\packages\\marvin.streamextensions\\1.2.0\\marvin.streamextensions.1.2.0.nupkg.sha512",
     "C:\\Users\\slrnd\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.1.1\\microsoft.aspnetcore.jsonpatch.2.1.1.nupkg.sha512",
     "C:\\Users\\slrnd\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\slrnd\\.nuget\\packages\\microsoft.extensions.configuration\\2.1.1\\microsoft.extensions.configuration.2.1.1.nupkg.sha512",

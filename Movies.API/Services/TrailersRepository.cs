@@ -14,7 +14,7 @@ namespace Movies.API.Services
 
         public TrailersRepository(MoviesContext context)
         {
-            context = context ?? throw new ArgumentNullException(nameof(context));
+            this.context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
 

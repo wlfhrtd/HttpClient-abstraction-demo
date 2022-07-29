@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Movies.Client/1.0.0": {
         "dependencies": {
+          "Marvin.StreamExtensions": "1.2.0",
           "Microsoft.AspNetCore.JsonPatch": "2.1.1",
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
@@ -17,6 +18,17 @@
         },
         "runtime": {
           "Movies.Client.dll": {}
+        }
+      },
+      "Marvin.StreamExtensions/1.2.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Marvin.StreamExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
@@ -434,6 +446,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Marvin.StreamExtensions/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nQL8cvFQh/5amnz6jaxzufWcBTuADEY4gUxVu8CUGGJyJWCoSPGjLFAPEsi6aAp1ZvLeR6hyP+OtG9JUz2GJ4Q==",
+      "path": "marvin.streamextensions/1.2.0",
+      "hashPath": "marvin.streamextensions.1.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/2.1.1": {
       "type": "package",
