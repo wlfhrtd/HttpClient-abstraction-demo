@@ -58,7 +58,11 @@ D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\obj\Debug\net5.0\Movies
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\obj\Debug\net5.0\ref\Movies.API.dll
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\obj\Debug\net5.0\Movies.API.pdb
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\obj\Debug\net5.0\Movies.API.genruntimeconfig.cache
-D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Humanizer.dll
-D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\ref\Movies.API.dll
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\obj\Debug\net5.0\staticwebassets\Movies.API.StaticWebAssets.xml
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Castle.Core.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Microsoft.DotNet.InternalAbstractions.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Moq.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.dll

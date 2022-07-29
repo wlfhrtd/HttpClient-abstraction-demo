@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
+
 namespace Movies.Client.Services
 {
     public class CRUDService : IIntegrationService

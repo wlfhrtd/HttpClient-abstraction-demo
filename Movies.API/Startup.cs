@@ -6,10 +6,9 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 using Movies.API.Contexts;
 using Movies.API.Services;
+using Swashbuckle.AspNetCore.Swagger;
 
 
 namespace Movies.API
@@ -27,7 +26,7 @@ namespace Movies.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers(options =>
+            services.AddMvc(options =>
             {
                 // 406 when requested unsupported media type
                 options.ReturnHttpNotAcceptable = true;
@@ -47,7 +46,7 @@ namespace Movies.API
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            string connectionString = Configuration.GetConnectionString("MoviesDBConnectionString");
+            string connectionString = Configuration["ConnectionStrings:MoviesDBConnectionString"];
             services.AddDbContext<MoviesContext>(o => o.UseSqlServer(connectionString));
 
             services.AddScoped<IMoviesRepository, MoviesRepository>();
@@ -58,12 +57,12 @@ namespace Movies.API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Movies.API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Movies.API", Version = "v1" });
             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             // Accept-Encoding on client
             app.UseResponseCompression();
@@ -83,14 +82,7 @@ namespace Movies.API
 
             app.UseHttpsRedirection();
 
-            app.UseRouting();
-
-            // app.UseAuthorization();
-      
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseMvc();
         }
     }
 }

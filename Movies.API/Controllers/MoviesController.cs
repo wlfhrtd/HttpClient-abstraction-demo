@@ -102,10 +102,10 @@ namespace Movies.API.Controllers
 
             if (movieEntity == null) return NotFound();
 
-            // patch is on DTO not movie entity
+            // patch DTO not movie entity
             var movieToPatch = Mapper.Map<Models.MovieForUpdate>(movieEntity);
 
-            patchDoc.ApplyTo(movieToPatch, (Microsoft.AspNetCore.JsonPatch.Adapters.IObjectAdapter)ModelState);
+            patchDoc.ApplyTo(movieToPatch, ModelState);
 
             if (!ModelState.IsValid) return new UnprocessableEntityObjectResult(ModelState);
 
