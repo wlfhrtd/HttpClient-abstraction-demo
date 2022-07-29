@@ -35,11 +35,8 @@ namespace Movies.API
                 options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
                 options.InputFormatters.Add(new XmlSerializerInputFormatter(options));
 
-                // Set XML as default format instead of JSON - the first formatter in the 
-                // list is the default, so we insert the input/output formatters at 
-                // position 0
-                //options.OutputFormatters.Insert(0,new XmlSerializerOutputFormatter());
-                //options.InputFormatters.Insert(0, new XmlSerializerInputFormatter(options));
+                // options.OutputFormatters.Insert(0,new XmlSerializerOutputFormatter());
+                // options.InputFormatters.Insert(0, new XmlSerializerInputFormatter(options));
             });
             // compressing responses support eg gzip
             services.AddResponseCompression();
