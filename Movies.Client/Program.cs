@@ -69,7 +69,8 @@ namespace Movies.Client
             // services.AddScoped<IIntegrationService, PartialUpdateService>();
             // services.AddScoped<IIntegrationService, StreamService>();
             // services.AddScoped<IIntegrationService, CancellationService>();
-            services.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
+            // services.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
+            services.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
         }
     }
 }

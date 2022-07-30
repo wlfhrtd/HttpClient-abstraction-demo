@@ -15,6 +15,7 @@ namespace Movies.API.Entities
         [MaxLength(200)]
         public string Title { get; set; }
 
+        [MinLength(10)]
         [MaxLength(2000)]
         public string Description { get; set; }
 
