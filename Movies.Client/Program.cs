@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Movies.Client.Handlers;
 using Movies.Client.Services;
 using System;
 using System.Net.Http;
@@ -42,6 +43,8 @@ namespace Movies.Client
                 client.Timeout = new TimeSpan(0, 0, 30);
                 client.DefaultRequestHeaders.Clear();
             })
+                .AddHttpMessageHandler(handler=>new TimeOutDelegatingHandler(TimeSpan.FromSeconds(20)))
+                .AddHttpMessageHandler(handler => new RetryPolicyDelegatingHandler(2))
                 .ConfigurePrimaryHttpMessageHandler(handler =>
                 new HttpClientHandler()
                 {
@@ -70,7 +73,8 @@ namespace Movies.Client
             // services.AddScoped<IIntegrationService, StreamService>();
             // services.AddScoped<IIntegrationService, CancellationService>();
             // services.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
-            services.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
+            // services.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
+            services.AddScoped<IIntegrationService, HttpHandlersService>();
         }
     }
 }

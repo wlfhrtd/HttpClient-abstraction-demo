@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.API", "Movies.API\Movies.API.csproj", "{BE0747B2-9421-4F07-A7C2-B61836999ED8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Client", "Movies.Client\Movies.Client.csproj", "{0C9C3356-A3C7-4DFC-A4B5-5054190D1244}"
-	ProjectSection(ProjectDependencies) = postProject
-		{BE0747B2-9421-4F07-A7C2-B61836999ED8} = {BE0747B2-9421-4F07-A7C2-B61836999ED8}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
