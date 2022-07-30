@@ -31,3 +31,9 @@ D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\obj\Debug\net5.0\Mov
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\obj\Debug\net5.0\Movies.Client.genruntimeconfig.cache
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Marvin.StreamExtensions.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Extensions.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.Extensions.Http.dll
+D:\dev\cs\HttpClient-consume-apis-dotnet-core\Movies.Client\bin\Debug\net5.0\Microsoft.Net.Http.Headers.dll

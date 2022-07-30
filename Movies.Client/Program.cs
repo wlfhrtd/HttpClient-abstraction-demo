@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Movies.Client.Services;
 using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 
@@ -35,10 +36,40 @@ namespace Movies.Client
                 builder.AddDebug();
             });
 
+            services.AddHttpClient("MoviesClient", client =>
+            {
+                client.BaseAddress = new Uri("http://localhost:35087");
+                client.Timeout = new TimeSpan(0, 0, 30);
+                client.DefaultRequestHeaders.Clear();
+            })
+                .ConfigurePrimaryHttpMessageHandler(handler =>
+                new HttpClientHandler()
+                {
+                    AutomaticDecompression = System.Net.DecompressionMethods.GZip
+                });
+
+            //services.AddHttpClient<MoviesClient>(client =>
+            //{
+            //    client.BaseAddress = new Uri("http://localhost:35087");
+            //    client.Timeout = new TimeSpan(0, 0, 30);
+            //    client.DefaultRequestHeaders.Clear();
+            //}).ConfigurePrimaryHttpMessageHandler(handler => new HttpClientHandler()
+            //{
+            //    AutomaticDecompression = System.Net.DecompressionMethods.GZip
+            //});
+
+            services.AddHttpClient<MoviesClient>()
+                .ConfigurePrimaryHttpMessageHandler(handler =>
+                new HttpClientHandler
+                {
+                    AutomaticDecompression = System.Net.DecompressionMethods.GZip
+                });
+
             // services.AddScoped<IIntegrationService, CRUDService>();
             // services.AddScoped<IIntegrationService, PartialUpdateService>();
             // services.AddScoped<IIntegrationService, StreamService>();
-            services.AddScoped<IIntegrationService, CancellationService>();
+            // services.AddScoped<IIntegrationService, CancellationService>();
+            services.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
         }
     }
 }
