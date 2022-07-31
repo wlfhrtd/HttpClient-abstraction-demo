@@ -3,6 +3,8 @@
 //using System.IO;
 //using System.Text;
 
+// USE Marvin.StreamExtensions package
+
 //namespace Movies.Client.Util
 //{
 //    public static class StreamExtensions

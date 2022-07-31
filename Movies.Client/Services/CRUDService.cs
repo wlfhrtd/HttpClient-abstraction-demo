@@ -14,10 +14,10 @@ namespace Movies.Client.Services
 {
     public class CRUDService : IIntegrationService
     {
-        // IDisposable but best practice is to re-use obj
+        // IDisposable but best practice is to re-use instance
         private static HttpClient httpClient = new();
 
-        // use DefaultRequestHeaders.Accept config + shortcut methods if allowed by consistency of api services
+        // use DefaultRequestHeaders.* config + shortcut methods if allowed by consistency of api services
         // otherwise use full HttpRequestMessage notation with setting headers manually
         public CRUDService()
         {

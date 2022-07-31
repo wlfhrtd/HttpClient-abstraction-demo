@@ -3,11 +3,11 @@ using Moq.Protected;
 using Movies.Client.Exceptions;
 using Movies.Client.Handlers;
 using Movies.Client.Testing;
-using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
+
 
 namespace Movies.Test
 {

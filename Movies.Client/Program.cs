@@ -51,6 +51,8 @@ namespace Movies.Client
                     AutomaticDecompression = System.Net.DecompressionMethods.GZip
                 });
 
+            // moved defaults for typed client to separate MoviesClient class
+            // one should still prefer configuring handlers pipeline in ConfigureServices
             //services.AddHttpClient<MoviesClient>(client =>
             //{
             //    client.BaseAddress = new Uri("http://localhost:35087");
@@ -74,7 +76,7 @@ namespace Movies.Client
             // services.AddScoped<IIntegrationService, CancellationService>();
             // services.AddScoped<IIntegrationService, HttpClientFactoryInstanceManagementService>();
             // services.AddScoped<IIntegrationService, DealingWithErrorsAndFaultsService>();
-            services.AddScoped<IIntegrationService, HttpHandlersService>();
+            // services.AddScoped<IIntegrationService, HttpHandlersService>();
         }
     }
 }
